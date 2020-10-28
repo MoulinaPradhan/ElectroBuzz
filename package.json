@@ -1,0 +1,22 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN Ecomerce site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoulinaPradhan/ProShop.git"
+  },
+  "author": "Moulina Pradhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoulinaPradhan/ProShop/issues"
+  },
+  "homepage": "https://github.com/MoulinaPradhan/ProShop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
