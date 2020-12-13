@@ -11,8 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import":"node backend/seeder",
     "data:destroy":"node backend/seeder -d"
-
-  },
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MoulinaPradhan/ProShop.git"
