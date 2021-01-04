@@ -1,4 +1,4 @@
-
+import generateToken from '../utilis/generateToken.js'
 import User from '../models/userModel.js'
 import asyncHandler from 'express-async-handler'
 
@@ -16,7 +16,7 @@ res.json({
     name:user.name,
     email:user.email,
     isAdmin: user.isAdmin,
-    token:null
+    token:generateToken(user._id),
 })
 
 }else{
