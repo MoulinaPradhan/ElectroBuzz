@@ -23,8 +23,8 @@ const ProfileScreen = ({ location, history }) => {
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
 
-//   const userUpdateProfile = useSelector((state) => state.userUpdateProfile)
-//   const { success } = userUpdateProfile
+  const userUpdateProfile = useSelector((state) => state.userUpdateProfile)
+  const { success } = userUpdateProfile
 
 //   const orderListMy = useSelector((state) => state.orderListMy)
 //   const { loading: loadingOrders, error: errorOrders, orders } = orderListMy
@@ -49,7 +49,7 @@ const ProfileScreen = ({ location, history }) => {
     if (password !== confirmPassword) {
       setMessage('Passwords do not match')
     } else {
-    //   dispatch(updateUserProfile({ id: user._id, name, email, password }))
+      dispatch(updateUserProfile({ id: user._id, name, email, password }))
     }
   }
 
@@ -58,8 +58,7 @@ const ProfileScreen = ({ location, history }) => {
       <Col md={3}>
         <h2>User Profile</h2>
         {message && <Message variant='danger'>{message}</Message>}
-        {/* {}
-        {success && <Message variant='success'>Profile Updated</Message>} */}
+        {success && <Message variant='success'>Profile Updated</Message>}
         {loading ? (
           <Loader />
         ) : error ? (
