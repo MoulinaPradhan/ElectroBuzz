@@ -28,7 +28,7 @@ const OrderScreen = ({ match, history }) => {
 
 useEffect(() => {
 dispatch(getOrderDetails(orderId))
-},[])
+},[dispatch, orderId])
 
 //   const orderPay = useSelector((state) => state.orderPay)
 //   const { loading: loadingPay, success: successPay } = orderPay
