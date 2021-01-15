@@ -6,8 +6,8 @@ import Product from '../Components/Product'
 import Message from '../Components/Message'
 import Loader from '../Components/Loader'
 import Paginate from '../Components/Paginate'
-// import ProductCarousel from '../Components/ProductCarousel'
-// import Meta from '../components/Meta'
+import ProductCarousel from '../Components/ProductCarousel'
+import Meta from '../Components/Meta'
 import { listProducts } from '../actions/productActions'
 
 const HomeScreen = ({ match }) => {
@@ -26,14 +26,14 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
-      {/* <Meta /> */}
-      {/* {!keyword ? (
+      <Meta />
+      {!keyword ? (
         <ProductCarousel />
       ) : (
         <Link to='/' className='btn btn-light'>
           Go Back
         </Link>
-      )} */}
+      )}
       <h1>Latest Products</h1>
       {loading ? (
         <Loader />

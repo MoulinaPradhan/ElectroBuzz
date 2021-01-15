@@ -60,8 +60,8 @@ export const userLoginReducer =
         return { loading: false, success: true, userInfo: action.payload }
       case USER_UPDATE_PROFILE_FAIL:
         return { loading: false, error: action.payload }
-      // case USER_DETAILS_RESET:
-      //   return { user: {} }
+      case USER_DETAILS_RESET:
+        return { user: {} }
       default:
         return state
     }
