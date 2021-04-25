@@ -64,3 +64,8 @@ h2{
     font-size: 2.5vw;
   }
 }
+
+/*avatar*/
+.sc-iCfLBT ,.hudmly ,.rsc-ts-image{
+  background-image: url(`https://www.flaticon.com/svg/vstatic/svg/181/181516.svg?token=exp=1619340675~hmac=5ad5167c35cdbefba5a3151b8b0b326b`);
+}
