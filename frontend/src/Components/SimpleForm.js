@@ -30,10 +30,11 @@ const steps = [
   {
     id: 'intro',
     message: 'Hi! how may I help you?',
-    trigger: '2',
+     trigger:2
   },
   {
     id: '2',
+   
     options: [
       { value: 1, label: 'My Orders', trigger: 'my orders' },
       { value: 2, label: 'Return Product', trigger: 'return products' },
@@ -81,7 +82,7 @@ class SimpleForm extends Component {
     return (
       <ThemeProvider theme={theme}>
       <ChatBot
-      headerTitle="Customer Care"
+      headerTitle="Here For You"
       recognitionEnable={true}
       speechSynthesis={{ enable: true, lang: 'en' }}
       steps={steps} 
