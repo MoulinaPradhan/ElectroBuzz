@@ -14,17 +14,12 @@ import uploadRoutes from './routes/uploadRoutes.js'
 dotenv.config()
 const app = express();
 
-
-
 connectDB()
-
-
 
 
 if(process.env.NODE_ENV === 'development'){
     app.use(morgan('dev'))
 }
-
 
 app.use(express.json())
 // app.get('/',(req,res)=>{
@@ -60,7 +55,6 @@ app.use(notFound)
 
 app.use(errorHandler)
 
-//need to add later
 const PORT = process.env.PORT || 5000
 
 connectDB().then(()=>{
